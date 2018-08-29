@@ -1,0 +1,36 @@
+{
+  "name": "socket-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test1": "jest -i",
+    "testsendmail": "jest -i && node ./sendMails.js"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Test Report Roku Automation",
+          "outputPath": "./test-report.html",
+          "includeFailureMsg": true,
+          "theme": "darkTheme",
+          "logo": "http://zemoga-dropshare.s3.amazonaws.com/image.png"
+        }
+      ]
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "frisby": "^2.1.0",
+    "jest": "^23.5.0",
+    "jest-html-reporter": "^2.4.2",
+    "net": "^1.0.2",
+    "nodemailer": "^4.6.8"
+  },
+  "dependencies": {}
+}

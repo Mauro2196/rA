@@ -1,0 +1,18 @@
+<?rokuml version="1.0" encoding="utf-8" ?>
+<!--********** Copyright 2018 Roku Corp.  All Rights Reserved. **********-->
+
+<component name="AutomationConection" extends="Task">
+    <interface>  
+        <function name="UIIsInFocus"/>
+        <function name="UIgetElementText"/>
+        <function name="UIinputElementText"/>
+        <function name="UIgetElementMeasures"/>
+        <function name="UIgetElementChildCount"/>
+        <function name="UIgetElementLabelChild"/>
+        <function name="UIgetElementChild"/>
+        <function name="UIisVisible"/>
+        
+         
+    </interface>
+<script type="text/brightscript" uri="pkg:/components/Automation/automationConection.brs" />
+</component>
